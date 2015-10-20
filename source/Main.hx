@@ -6,6 +6,7 @@ import flash.display.StageScaleMode;
 import flash.events.Event;
 import flash.Lib;
 import flixel.FlxGame;
+import states.MenuState;
 import flixel.FlxState;
 
 class Main extends Sprite 
