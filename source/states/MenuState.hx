@@ -80,7 +80,7 @@ class MenuState extends FlxState
 
 	override public function update():Void
 	{
-				// Stop the texts when they reach their designated position
+				
 		if (_text1.x > FlxG.width / 5)	
 		{
 			_text1.velocity.x = 0;
@@ -91,7 +91,6 @@ class MenuState extends FlxState
 			_text2.velocity.x = 0;
 		}
 		
-		// this is the goofus way to do it. An array would be way better
 		switch(_option)    
 		{
 			case 0:
@@ -104,7 +103,6 @@ class MenuState extends FlxState
 		
 		if (FlxG.keys.justPressed.UP)
 		{
-			// A goofy format, because % doesn't work on negative numbers
 			_option = (_option + OPTIONS - 1) % OPTIONS; 
 			FlxG.sound.play("assets/sounds/menu.wav", 1, false);
 		}
