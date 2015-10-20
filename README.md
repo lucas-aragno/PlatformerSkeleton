@@ -1,0 +1,2 @@
+# PlatformerSkeleton
+haxeflixel game skeleton
