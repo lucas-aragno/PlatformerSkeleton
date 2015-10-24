@@ -118,7 +118,7 @@ class MenuState extends FlxState
 			switch (_option) 
 			{
 				case 0:
-					//FlxG.cameras.fade(0xff969867, 1, false, startGame);
+					FlxG.cameras.fade(0xff969867, 1, false, startGame);
 					FlxG.sound.play("assets/sounds/coin.wav", 1, false);
 				case 1:
 					FlxG.openURL("http://lucas-aragno.github.io");
@@ -129,4 +129,9 @@ class MenuState extends FlxState
 		
 		super.update();
 	}	
+
+	private function startGame():Void
+	{
+		FlxG.switchState(new PlayState());
+	}
 }
